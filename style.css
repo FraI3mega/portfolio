@@ -1,3 +1,50 @@
+/* fonty */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('./fonts/IBM Plex Sans Var-Roman.woff2') format('woff2');
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('./fonts/IBM Plex Sans Var-Italic.woff2') format('woff2');
+  font-weight: 100 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src: url('./fonts/IBM\ Plex\ Serif\ Var-Roman.woff2') format('woff2');
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src: url('./fonts/IBM\ Plex\ Serif\ Var-Italic.woff2') format('woff2');
+  font-weight: 100 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+}
+
 header {
     top:0;
     position: sticky;
