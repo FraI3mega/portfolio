@@ -1,34 +1,59 @@
 /* fonty */
 @font-face {
-  font-family: 'IBM Plex Sans';
-  src: url('./fonts/IBM Plex Sans Var-Roman.woff2') format('woff2');
-  font-weight: 100 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'IBM Plex Sans';
+    src: url('./fonts/IBM Plex Sans Var-Roman.woff2') format('woff2');
+    font-weight: 100 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'IBM Plex Sans';
-  src: url('./fonts/IBM Plex Sans Var-Italic.woff2') format('woff2');
-  font-weight: 100 700;
-  font-style: italic;
-  font-display: swap;
+    font-family: 'IBM Plex Sans';
+    src: url('./fonts/IBM Plex Sans Var-Italic.woff2') format('woff2');
+    font-weight: 100 700;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'IBM Plex Serif';
-  src: url('./fonts/IBM\ Plex\ Serif\ Var-Roman.woff2') format('woff2');
-  font-weight: 100 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'IBM Plex Serif';
+    src: url('./fonts/IBM\ Plex\ Serif\ Var-Roman.woff2') format('woff2');
+    font-weight: 100 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'IBM Plex Serif';
-  src: url('./fonts/IBM\ Plex\ Serif\ Var-Italic.woff2') format('woff2');
-  font-weight: 100 700;
-  font-style: italic;
-  font-display: swap;
+    font-family: 'IBM Plex Serif';
+    src: url('./fonts/IBM\ Plex\ Serif\ Var-Italic.woff2') format('woff2');
+    font-weight: 100 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+    --graphite: #3c3744ff;
+    --frosted-blue: #8ee3f5ff;
+    --navy-electric: #090c9bff;
+    --smart-blue: #3066beff;
+    --deep-ocean: #1d7874ff;
+}
+
+.accent {
+    color: var(--smart-blue)
+}
+
+.back {
+    background: linear-gradient(color-mix(in oklch, var(--frosted-blue) 95%, black),var(--frosted-blue))
+}
+
+.section-title {
+    width: 100%;
+    margin-top: 0%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,16 +63,53 @@ body {
 
 h1 {
     font-weight: 700;
+    font-size: 250%;
 }
 
 h2 {
     font-family: "IBM Plex Serif", serif;
     font-weight: 600;
+    text-align: center;
+    font-size: 200%;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 150%;
 }
 
 header {
-    top:0;
+    top: 0;
     position: sticky;
     text-align: right;
     padding: 1em 2em;
+    background-color: white;
+}
+
+header a {
+    text-decoration: none;
+    padding: 0ch 1ch;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 5%;
+}
+
+article {
+    margin: 5px;
+    flex: 2 1 200px;
+}
+
+
+#hero h2 {
+    text-align: left;
+}
+
+img {
+    flex-shrink: 2;
+    margin: 10px;
+    height: auto;
+    max-width: 100%;
 }
